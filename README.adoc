@@ -1,0 +1,106 @@
+ifndef::env-github[:icons: font]
+:toc: preamble
+:toclevels: 2
+:sectanchors:
+
+ifdef::env-github[]
+++++
+<a id="readme-top"></a>
+<div align="center">
+<a href="https://github.com/dev-centr/switchyard/graphs/contributors"><img src="https://img.shields.io/github/contributors/dev-centr/switchyard.svg?style=for-the-badge" alt="Contributors"></a>
+<a href="https://github.com/dev-centr/switchyard/network/members"><img src="https://img.shields.io/github/forks/dev-centr/switchyard.svg?style=for-the-badge" alt="Forks"></a>
+<a href="https://github.com/dev-centr/switchyard/stargazers"><img src="https://img.shields.io/github/stars/dev-centr/switchyard.svg?style=for-the-badge" alt="Stars"></a>
+<a href="https://github.com/dev-centr/switchyard/issues"><img src="https://img.shields.io/github/issues/dev-centr/switchyard.svg?style=for-the-badge" alt="Issues"></a>
+<a href="https://github.com/dev-centr/switchyard/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dev-centr/switchyard.svg?style=for-the-badge" alt="License"></a>
+<br />
+<h3 align="center">Switchyard</h3>
+<p align="center">
+Windows file-association switchyard: snapshot, diff, icon lock, and room to grow into smarter routing.<br /><br />
+<a href="https://github.com/dev-centr/switchyard/issues">Report Bug</a>
+&middot;
+<a href="https://github.com/dev-centr/switchyard/issues">Request Feature</a>
+</p>
+</div>
+++++
+endif::[]
+
+ifndef::env-github[]
+image:https://img.shields.io/github/contributors/dev-centr/switchyard.svg?style=for-the-badge[Contributors,link=https://github.com/dev-centr/switchyard/graphs/contributors]
+image:https://img.shields.io/github/forks/dev-centr/switchyard.svg?style=for-the-badge[Forks,link=https://github.com/dev-centr/switchyard/network/members]
+image:https://img.shields.io/github/stars/dev-centr/switchyard.svg?style=for-the-badge[Stars,link=https://github.com/dev-centr/switchyard/stargazers]
+image:https://img.shields.io/github/issues/dev-centr/switchyard.svg?style=for-the-badge[Issues,link=https://github.com/dev-centr/switchyard/issues]
+image:https://img.shields.io/github/license/dev-centr/switchyard.svg?style=for-the-badge[License,link=https://github.com/dev-centr/switchyard/blob/main/LICENSE]
+
+= Switchyard
+
+Windows file-association switchyard: snapshot, diff, icon lock, and room to grow into smarter routing.
+
+link:https://github.com/dev-centr/switchyard/issues[Report Bug] ·
+link:https://github.com/dev-centr/switchyard/issues[Request Feature]
+endif::[]
+
+== About The Project
+
+Installers often rewrite **open** and **icon** together, so LibreOffice (and friends) can replace Office icons when they claim a type. Windows already keeps those jobs on separate tracks (`shell\open\command` vs `DefaultIcon` vs thumbnail `ShellEx`). Switchyard is the yard that watches the points: snapshot associations, notice hijacks, lock icons, restore what you chose — and later, optional smarter open routing **without** becoming a rude global default handler.
+
+=== Naming
+
+* **Switchyard** — product / brand (rail-yard metaphor: sort association tracks).
+* **File router** — debranded role name for “send this file intent to the right handler.”
+* **App broker** — role name for mediating between Shell intents and apps (crowded on Windows; use sparingly in prose, fine in architecture talk).
+
+Depth lives in link:PLAN.adoc[PLAN.adoc] and `docs/` as the product grows.
+
+== Built With
+
+* Language
+** link:https://dlang.org/[image:https://img.shields.io/badge/D-B03931?style=for-the-badge&logo=d&logoColor=white[D]]
+* Platform
+** Windows (file associations / registry)
+
+== Getting Started
+
+=== Prerequisites
+
+* link:https://dub.pm/[DUB] and a D compiler (LDC or DMD)
+* Windows
+
+=== Build
+
+[source,shell]
+----
+dub build
+----
+
+=== Quick use
+
+[source,shell]
+----
+dub run -- show .txt .md
+dub run -- snapshot --out yard.snap .docx .xlsx
+dub run -- doctor
+----
+
+== Roadmap
+
+* Icon lock / restore
+* Snapshot diff (`status`)
+* SDL watchlist config
+* Tray UI + About / debug dump
+* Installer + winget before 1.0
+
+See link:PLAN.adoc[PLAN.adoc].
+
+== Changelog
+
+link:CHANGELOG.adoc[Changelog]
+
+== License
+
+Distributed under the MIT License. See `LICENSE`.
+
+== Contact
+
+Dev-Centr — link:https://github.com/dev-centr[github.com/dev-centr]
+
+Project Link: https://github.com/dev-centr/switchyard

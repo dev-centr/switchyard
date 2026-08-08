@@ -1,0 +1,9 @@
+# Watchlist example (planned SDL config — not loaded by the CLI yet)
+#
+# watch ".docx" {
+#     lock-icon true
+#     preferred-icon `C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE,1`
+# }
+# watch ".xlsx" {
+#     lock-icon true
+# }

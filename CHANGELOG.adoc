@@ -1,0 +1,10 @@
+= Changelog
+:toc:
+
+Timeline of Switchyard releases. Detail pages live under `changelog-details/`.
+
+== 2026-08-08 — Project scaffold
+
+* Initial D CLI: `show`, `snapshot`, `doctor`, `version`; stubs for `lock-icons` / `restore` / full `status` diff.
+* Product plan and Software Product Essentials hooks documented.
+* See link:changelog-details/2026-08-08%20-%20project%20scaffold.adoc[Detailed changelog].

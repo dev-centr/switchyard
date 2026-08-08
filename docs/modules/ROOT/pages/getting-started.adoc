@@ -1,0 +1,16 @@
+= Getting started
+:description: Build and run Switchyard on Windows.
+
+== Prerequisites
+
+* DUB + LDC or DMD
+* Windows
+
+== Build and run
+
+[source,shell]
+----
+dub build
+.\switchyard.exe show .txt
+.\switchyard.exe doctor
+----

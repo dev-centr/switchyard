@@ -1,0 +1,10 @@
+{
+	"name": "switchyard",
+	"description": "Windows file-association switchyard: snapshot, diff, icon lock, and future route intelligence",
+	"copyright": "Copyright © 2026, Dev-Centr",
+	"authors": ["Dev-Centr"],
+	"license": "MIT",
+	"targetType": "executable",
+	"libs-windows": ["advapi32"],
+	"stringImportPaths": ["embed"]
+}

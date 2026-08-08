@@ -1,0 +1,14 @@
+= 2026-08-08 — Project scaffold
+
+== Added
+
+* Repository allow-list `.gitignore`, MIT license, README, PLAN.
+* DUB executable `switchyard` with `embed/version.txt` stamped version string.
+* Registry readers for ProgID, `DefaultIcon`, and `shell\open\command` per extension (`show` / `snapshot`).
+* Placeholder commands for icon lock, restore, and snapshot diff.
+* Essentials intent: doctor stub, future installer/winget/About for GUI.
+
+== Notes
+
+* Name **Switchyard** chosen for the rail-yard metaphor (sorting association tracks), broader than “assoc guardian,” without claiming to be a global open proxy.
+* Unrelated prior art exists (JBoss SwitchYard SOA, academic Switchyard, NVIDIA-NeMo Switchyard); this product is Windows shell association tooling under Dev-Centr.

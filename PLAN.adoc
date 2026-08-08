@@ -1,0 +1,86 @@
+= Switchyard
+:toc:
+:toclevels: 2
+
+== Goal
+
+Windows **switchyard** for file associations: snapshot what owns open / icon / thumbnail for each type, detect hijacks after installers, restore or lock the tracks you care about — without becoming a global open proxy.
+
+Metaphor:: a rail switchyard sorts cars onto tracks. Switchyard sorts *association jobs* (open verb, `DefaultIcon`, thumbnail providers) onto the handlers you chose, and notices when something else rewires the points.
+
+== Naming
+
+[cols="1,2"]
+|===
+| Term | Use
+
+| **Switchyard**
+| Product name and brand. Keep this on the binary, repo, and user-facing chrome.
+
+| **File router**
+| Debranded role: routing a file intent (open / icon / thumbnail / …) to a handler. Good in specs and Microsoft-facing prose when a neutral noun is better than the brand.
+
+| **App broker**
+| Architecture role: mediate between Shell services and apps. Accurate, but “broker” is crowded on Windows — prefer in design notes, not as a product rename.
+|===
+
+Viable names are plentiful; we pick one brand and keep the others as role vocabulary.
+
+== Product surfaces (v0 → later)
+
+[cols="1,2,1"]
+|===
+| Surface | Role | Status
+
+| CLI
+| `snapshot`, `status`, `lock-icons`, `restore`, `--version`, `doctor`
+| Scaffolding
+
+| Config (SDL)
+| Which extensions to watch; preferred icon sources; optional open overrides
+| Planned
+
+| Tray / GUI
+| Diff after install, one-click restore, About + debug dump
+| Later
+
+| Route intelligence (file-router role)
+| Optional open routing / “Open in …” policies without owning DefaultIcon
+| Deferred (broader yard / broker role)
+|===
+
+== Non-goals
+
+* Do **not** become LibreOffice: do not seize default open for half the universe by default.
+* Do **not** invent a `.dev` passthrough format — that intent lives elsewhere; this app is registry/shell policy.
+* Do **not** replace thumbnail providers that already work (e.g. SVG thumbnailers).
+
+== Architecture notes
+
+Windows already separates:
+
+* Open → ProgID `shell\open\command`
+* Static icon → `DefaultIcon` (extension or ProgID)
+* Thumbnails → `IThumbnailProvider` under `ShellEx`
+
+Installers often rewrite ProgID + icon together. Switchyard treats them as separate tracks.
+
+== Essentials checklist (shipping)
+
+See Dev-Centr Software Product Essentials. For this Windows utility:
+
+* [ ] `--version` with build id
+* [ ] `doctor` / debug dump (redacted)
+* [ ] Changelog + README
+* [ ] Signed installer + winget path before 1.0
+* [ ] About surface when GUI lands
+* [ ] Auto-update or winget updates before 1.0
+
+== Status
+
+* [x] Repo scaffold (D CLI, allow-list gitignore, changelog)
+* [x] Minimal association snapshot over HKCR/HKCU
+* [ ] SDL watchlist config
+* [ ] Icon lock / restore
+* [ ] Hijack detect after install
+* [ ] CI release + installer
