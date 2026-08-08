@@ -1,7 +1,6 @@
 name: switchyard
 title: Switchyard
-version: '0.1'
+version: master
 start_page: ROOT:index.adoc
-
 nav:
-- modules/ROOT/nav.adoc
+  - modules/ROOT/nav.adoc

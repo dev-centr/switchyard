@@ -3,6 +3,12 @@
 
 Timeline of Switchyard releases. Detail pages live under `changelog-details/`.
 
+== 2026-08-08 — Docs hub + SwitchBitch easter egg
+
+* Wired Antora component into `dev-centr/docs` playbooks; portal stub and homepage target `https://docs.devcentr.org/switchyard/`.
+* Help/docs easter egg: affectionate misnomer *SwitchBitch* (brand stays Switchyard).
+* See link:changelog-details/2026-08-08%20-%20docs%20hub%20and%20easter%20egg.adoc[Detailed changelog].
+
 == 2026-08-08 — Project scaffold
 
 * Initial D CLI: `show`, `snapshot`, `doctor`, `version`; stubs for `lock-icons` / `restore` / full `status` diff.

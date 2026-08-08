@@ -7,6 +7,12 @@ Roles (not alternate product names): **file router** (debranded) and **app broke
 
 TIP: `switchyard help` admits the affectionate misnomer *SwitchBitch*. That is an easter egg, not a rename.
 
-User-facing overview: the repository README. Design depth: `PLAN.adoc` at the repo root.
+== Get started
 
-Wire this component into the Dev-Centr docs hub when ready for publication.
+xref:getting-started.adoc[Getting started] — build with DUB and run `show` / `snapshot` / `doctor`.
+
+Repository::
+https://github.com/dev-centr/switchyard
+
+Design depth (repo root)::
+link:https://github.com/dev-centr/switchyard/blob/main/PLAN.adoc[PLAN.adoc]

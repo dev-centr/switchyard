@@ -16,6 +16,7 @@ ifdef::env-github[]
 <h3 align="center">Switchyard</h3>
 <p align="center">
 Windows file-association switchyard: snapshot, diff, icon lock, and room to grow into smarter routing.<br /><br />
+<a href="https://docs.devcentr.org/switchyard/"><strong>Explore the docs »</strong></a><br /><br />
 <a href="https://github.com/dev-centr/switchyard/issues">Report Bug</a>
 &middot;
 <a href="https://github.com/dev-centr/switchyard/issues">Request Feature</a>
@@ -35,6 +36,7 @@ image:https://img.shields.io/github/license/dev-centr/switchyard.svg?style=for-t
 
 Windows file-association switchyard: snapshot, diff, icon lock, and room to grow into smarter routing.
 
+link:https://docs.devcentr.org/switchyard/[Explore the docs] ·
 link:https://github.com/dev-centr/switchyard/issues[Report Bug] ·
 link:https://github.com/dev-centr/switchyard/issues[Request Feature]
 endif::[]

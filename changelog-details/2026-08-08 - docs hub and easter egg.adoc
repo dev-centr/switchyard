@@ -1,0 +1,8 @@
+= 2026-08-08 — Docs hub and easter egg
+
+== Added
+
+* Antora `version: master` aligned with sibling tools; component registered on docs hub playbooks.
+* Portal page and home-card links from `dev-centr/docs`.
+* README “Explore the docs” → https://docs.devcentr.org/switchyard/
+* SwitchBitch easter egg in CLI help and naming docs (not for installers/About).
