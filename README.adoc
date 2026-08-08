@@ -48,6 +48,7 @@ Installers often rewrite **open** and **icon** together, so LibreOffice (and fri
 * **Switchyard** — product / brand (rail-yard metaphor: sort association tracks).
 * **File router** — debranded role name for “send this file intent to the right handler.”
 * **App broker** — role name for mediating between Shell intents and apps (crowded on Windows; use sparingly in prose, fine in architecture talk).
+* **SwitchBitch** — easter egg / affectionate misnomer (`switchyard help`). Not the product name.
 
 Depth lives in link:PLAN.adoc[PLAN.adoc] and `docs/` as the product grows.
 

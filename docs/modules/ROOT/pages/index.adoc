@@ -5,6 +5,8 @@ Switchyard snapshots and guards Windows file-association **tracks** (open verb, 
 
 Roles (not alternate product names): **file router** (debranded) and **app broker** (architecture talk). Brand stays Switchyard.
 
+TIP: `switchyard help` admits the affectionate misnomer *SwitchBitch*. That is an easter egg, not a rename.
+
 User-facing overview: the repository README. Design depth: `PLAN.adoc` at the repo root.
 
 Wire this component into the Dev-Centr docs hub when ready for publication.

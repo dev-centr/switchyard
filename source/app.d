@@ -154,4 +154,5 @@ void printHelp()
     writeln("  switchyard version");
     writeln;
     writeln("See PLAN.adoc and README.adoc.");
+    writeln("Also known to friends as SwitchBitch. Officially: Switchyard.");
 }
