@@ -23,8 +23,6 @@ Metaphor:: a rail switchyard sorts cars onto tracks. Switchyard sorts *associati
 | **App broker**
 | Architecture role: mediate between Shell services and apps. Accurate, but “broker” is crowded on Windows — prefer in design notes, not as a product rename.
 
-| **SwitchBitch**
-| Easter egg / affectionate misnomer. Appears in `switchyard help`. Not the product name; do not put it on installers, winget, or About chrome.
 |===
 
 Viable names are plentiful; we pick one brand and keep the others as role vocabulary.
