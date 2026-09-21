@@ -5,7 +5,11 @@ Switchyard snapshots and guards Windows file-association **tracks** (open verb, 
 
 Roles (not alternate product names): **file router** (debranded) and **app broker** (architecture talk). Brand stays Switchyard.
 
-TIP: `switchyard help` admits the affectionate misnomer *SwitchBitch*. That is an easter egg, not a rename.
+== Highlights
+
+* Separate **open** vs **DefaultIcon** vs thumbnail tracks (installers often rewrite them together)
+* CLI: `show`, `snapshot`, `doctor` (icon lock / restore planned)
+* Roles: file router (debranded), app broker (architecture); brand stays Switchyard
 
 == Get started
 
